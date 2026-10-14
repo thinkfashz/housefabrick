@@ -1,0 +1,23 @@
+{
+  "logo": {
+    "id": "soluciones-fabrick",
+    "type": "svg",
+    "files": {
+      "svg": "/logo-fabrick.svg",
+      "png_fallback": "/logo-fabrick.png"
+    },
+    "colors": {
+      "gold": "#d4af37",
+      "silver": "#b8bcc4"
+    }
+  },
+  "textures": {
+    "strategy": "Usa local si existe, si no usa CDN gratis",
+    "local_path": "/textures/fabrick/",
+    "cdn_free": {
+      "wallpanel_roble": "https://threejs.org/examples/textures/hardwood2_diffuse.jpg",
+      "piso_madera": "https://threejs.org/examples/textures/hardwood2_diffuse.jpg",
+      "pintura_blanca": "#FFFFFF"
+    }
+  }
+}
