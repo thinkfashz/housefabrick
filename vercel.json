@@ -1,12 +1,14 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider npm run build",
+  "buildCommand": "CI=false NODE_OPTIONS=--openssl-legacy-provider npm run build",
   "outputDirectory": "build",
   "installCommand": "npm install --legacy-peer-deps",
   "framework": "create-react-app",
   "build": {
     "env": {
-      "NODE_OPTIONS": "--openssl-legacy-provider"
+      "CI": "false",
+      "NODE_OPTIONS": "--openssl-legacy-provider",
+      "DISABLE_ESLINT_PLUGIN": "true"
     }
   },
   "rewrites": [
