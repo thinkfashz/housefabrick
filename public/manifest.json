@@ -1,0 +1,18 @@
+{
+  "short_name": "Soluciones Fabrick",
+  "name": "Soluciones Fabrick — Showroom 3D",
+  "description": "Showroom 3D: recorre la casa y elige suelo, paredes y puertas.",
+  "lang": "es",
+  "dir": "ltr",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#FFC400",
+  "background_color": "#FFFFFF",
+  "icons": [
+    { "src": "logo192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "logo512.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "logo-maskable-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Soluciones Fabrick</title>
+  <!--
+    GitHub Pages no sabe reescribir URLs: si pides /hall te da un 404 de verdad. Este fichero
+    es la red de seguridad: GitHub lo sirve para CUALQUIER ruta inexistente, y el script de
+    abajo guarda la ruta pedida y vuelve a la portada, que ya reenvía sola a /hall.
+    Es el truco clásico para Publishas de React.
+  -->
+  <script>
+    (function () {
+      var l = window.location;
+      try {
+        var guardado = sessionStorage.getItem("sf-ruta");
+        if (guardado && guardado !== l.pathname) {
+          sessionStorage.removeItem("sf-ruta");
+          l.replace(guardado);            // a la ruta buena
+          return;
+        }
+        sessionStorage.setItem("sf-ruta", l.pathname + l.search + l.hash);
+      } catch (e) { /* modo privado sin sessionStorage: se pierde, pero no rompe */ }
+      l.replace("./");                    // a la raíz de la app
+    })();
+  </script>
+  <style>
+    body { margin:0; font-family:system-ui,Arial,sans-serif; background:#FFC400; color:#111;
+           display:grid; place-items:center; height:100vh; text-align:center; padding:24px }
+    b { font-size:20px }
+  </style>
+</head>
+<body><b>Soluciones Fabrick</b></body>
+</html>
